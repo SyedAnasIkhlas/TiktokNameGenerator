@@ -3,11 +3,11 @@
   font-family: "Kulim Park", sans-serif;
 }
 
-input,
-textarea {
+input{
   border: none;
   outline: none;
   padding: 5px;
+  padding-bottom:0px;
   color: #909294;
   min-width: 100%;
   position: relative;
@@ -24,16 +24,6 @@ button {
   padding: 5px;
   color: #ffffff;
   position: relative;
-}
-
-textarea {
-  height: 10px;
-  resize: none;
-  resize: vertical;
-  padding: 15px 5px;
-}
-
-input:focus {
 }
 
 .input-set {
@@ -134,15 +124,19 @@ form {
 .logo-p2 {
   color: #0045ff;
 }
-
 .names{
-  display:grid;
+  display:none;
   grid-template-columns: 1fr  1fr;
-/*    width:55vw; */
+   width:100%;
 }
+
+.show-grid{
+  display:grid;
+}
+
 table
 {
-  width:170px;
+  width:150px;
   margin-top:10px;
   margin-left:5px;
 }
@@ -151,6 +145,7 @@ table tr
   display:flex;
   border:1px solid #736464;
   padding:5px;
+  text-transform:uppercase;
 }
 table th
 {
@@ -160,18 +155,21 @@ table th
 table tr td
 {
   margin-top:5px;
+  overflow:scroll;
+}
+
+.prefix-table
+{
+  font-size:12px;
+  font-weight:bold;
 }
 
 .loading
 {
-  position:absolute;
-  top:0;
   width:100vw;
-  background-color:#b5b1b178;
-  height:100vh;
   pointer-events:none;
   display:none;
-  flex-direction:column;
+  flex-direction:row;
   justify-content:center;
   align-items:center;
 }
@@ -181,56 +179,56 @@ table tr td
 }
 .dot1,.dot2,.dot3
 {
-  position:absolute;
   width:30px;
   height:30px;
   margin:5px;
   border:1px solid #bbb1b1;
   border-radius:50%;
+  animation:2s alternate infinite  dot-animation;
 }
 
 .dot1 {
   background-color:#000000;
-  left:630;
-  animation:2s alternate infinite  dot1-animation;
 }
 .dot2 {
   background-color:white;
 }
 .dot3 {
   background-color:#e83f3f;
-  right:620;
-  animation:2s alternate infinite  dot3-animation;
+/*   animation:2s alternate infinite  dot3-animation; */
 }
 
-@keyframes dot1-animation {
-  from {
+.footer-set
+{
+  display:flex;
+  flex-direction:column;
+}
 
+.footer-head
+{
+  text-decoration:underline;
+}
+
+footer a
+{
+  text-decoration:none;
+  color:black;
+}
+
+@keyframes dot-animation {
+  from {
+    margin:0 0;
   }
 
   50%{
-  left:670
+  margin:0 -40px;
   }
 
   to {
-    left:710;
+   margin:0 5px;
   }
 }
 
-@keyframes dot3-animation {
-  from {
-    left:710
-  }
-  50%
-  {
-    left:668;
-
-  }
-
-  to {
-  left:630;
-  }
-}
 
 @media screen and (min-width: 800px) {
   form {

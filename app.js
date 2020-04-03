@@ -145,6 +145,7 @@ const generateButton = document.querySelector(".generate-button");
 // loading
 const loading = document.querySelector(".loading");
 // Table
+const names = document.querySelector(".names");
 const loremTable = document.querySelector(".lorem-table");
 const alphaNumTable = document.querySelector(".alpha-num-table");
 const numTable = document.querySelector(".num-table");
@@ -166,8 +167,11 @@ generateButton.addEventListener("click", function(event) {
     loading.classList.toggle("load");
     // loading animation timeout
    setTimeout(() => {
+      // Loading Animation
       loading.classList.toggle("load");
-   }, 5000);
+      // show names div
+      names.classList.add("show-grid");
+   }, 3000);
   //  generate names fakersJs
     for (let i = 0; i < 15; i++) {
       // faker.name.findName();
