@@ -1,0 +1,74 @@
+<html>
+    <title>Name Gen</title>  
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="tiktok name generator">
+    <meta name="author" content="Syed Anas Ikhlas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css"> 
+    <body>
+       <div class="content">
+           <h1><span class="logo-p1">Tik</span><span class="logo-p2">Tok</span> Name Generator</h1>
+            <form>
+                <div class="input-set">
+                   <label>Enter a keyword</label>
+                    <input type="text" placeholder="Enter a keyword!" class="input keyword"> 
+                </div>
+                
+                <button class="generate-button">Generate Name</button>
+            </form>
+            <div class="names"> 
+                <table class="lorem-table"> 
+                        <tr>
+                            <th>Random words</th>
+                        </tr>
+                </table>
+                
+                <table class="faker-table-first-name"> 
+                        <tr>
+                            <th>Random Keywords</th>
+                        </tr>
+                </table>
+                
+                <table class="faker-table-last-name"> 
+                        <tr>
+                            <th>Random Keywords</th>
+                        </tr>
+                </table>
+               
+                <table class="alpha-num-table"> 
+                        <tr>
+                            <th>AlphaNumeric</th>
+                        </tr>
+                </table>
+                
+                <table class="num-table"> 
+                        <tr>
+                            <th>Numeric</th>
+                        </tr>
+                </table>
+                
+                <table class="prefix-table"> 
+                        <tr>
+                            <th>Prefix</th>
+                        </tr>
+                </table>
+                <table class="suffix-table"> 
+                        <tr>
+                            <th>Suffix</th>
+                        </tr>
+                </table>
+            </div>
+       </div>
+
+
+       <div class="loading">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+        <div class="dot3"></div>
+       </div> 
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
