@@ -41,7 +41,7 @@ h1 {
 }
 
 .options-set span {
-  color: red;
+  color: green;
 }
 
 .about-p {
@@ -143,7 +143,7 @@ form {
   justify-content: center;
 }
 
-.generate-button {
+.generate-button,.formButton {
   background-color: rgb(116, 166, 255);
   padding: 9px;
   min-height: 50px;
@@ -154,7 +154,7 @@ form {
   border-radius: 4px;
 }
 
-.generate-button:hover {
+.generate-button,.formButton:hover {
   background-color: #52d82a;
   border-radius: 7px;
   cursor: pointer;
