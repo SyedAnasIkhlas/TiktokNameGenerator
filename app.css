@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Kulim Park", sans-serif;
 }
+body {
+  background-color: #69c9d0;
+}
 h1 {
   font-size: 40px;
 }
@@ -41,11 +44,12 @@ h1 {
 }
 
 .options-set span {
-  color: green;
+  color: #fff;
 }
 
 .about-p {
   width: 355px;
+  color: #ffffff;
 }
 
 .center {
@@ -53,6 +57,7 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #69c9d0;
 }
 
 input {
@@ -70,6 +75,17 @@ input {
 label {
   font-size: 18px;
 }
+
+input,
+textarea {
+  color: #69c9d0;
+}
+
+.input-set label.label-top {
+  top: 0px;
+  color: #fff;
+}
+
 button {
   border: none;
   outline: none;
@@ -84,15 +100,18 @@ button {
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
-  border-bottom: 1px solid #c1c1c1;
+  border-bottom: 1px solid #fff;
   min-height: 6vh;
   min-width: 9vw;
   padding: 5px;
   margin-top: 9px;
 }
-
+.verify-name-message.show {
+  color: #fff;
+}
 .red {
-  color: red;
+  /* color: red; */
+  color: #000;
 }
 
 .red-input {
@@ -106,8 +125,10 @@ button {
 .blue-input {
   border-bottom: 1px solid blue;
 }
-
 .input-set label {
+  color: #fff;
+}
+/* .input-set label {
   position: absolute;
   pointer-events: none;
   left: 10px;
@@ -118,7 +139,7 @@ button {
 .input-set label.label-top {
   top: 0px;
   color: #696464;
-}
+} */
 
 form {
   display: flex;
@@ -133,6 +154,7 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #ee1d52;
 }
 form {
   width: 79vw;
@@ -169,6 +191,8 @@ form {
 .msg {
   margin-top: 4px;
   font-size: 18px;
+  text-shadow: 0px -1px 20px #f00;
+  color: #fff;
 }
 
 .logo {
@@ -179,11 +203,12 @@ form {
 }
 
 .logo-p1 {
-  color: red;
+  /* color: rgb(105 201 208); */
+  color: #000;
 }
 
 .logo-p2 {
-  color: #0045ff;
+  color: #ffffff;
 }
 .names {
   display: none;
@@ -234,12 +259,18 @@ td {
 table tr td {
   margin-top: 5px;
   width: 100%;
+  color: #010101;
 }
 table a {
-  color: #009688;
+  color: #fff;
   text-decoration: none;
 }
 
+.generate-button {
+  background-color: #69c9d0;
+  border-radius: 7px;
+  cursor: pointer;
+}
 /* table a:before
 {
   content: "·";
