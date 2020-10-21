@@ -48,8 +48,19 @@ h1 {
 }
 
 .about-p {
-  width: 355px;
+  /* width: 355px; */
   color: #ffffff;
+  padding: 5px;
+}
+
+.promo {
+  background: #ee1d52;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-top: 15px;
 }
 
 .center {
@@ -78,7 +89,15 @@ label {
 
 input,
 textarea {
-  color: #69c9d0;
+  color: #fff;
+}
+textarea {
+  border-bottom: 1px solid #fff;
+  font-size: 19px;
+  min-height: 40px;
+}
+textarea::placeholder {
+  color: #fff;
 }
 
 .input-set label.label-top {
@@ -127,6 +146,11 @@ button {
 }
 .input-set label {
   color: #fff;
+}
+
+.illustration {
+  width: 90vw;
+  margin-top: 5px;
 }
 /* .input-set label {
   position: absolute;

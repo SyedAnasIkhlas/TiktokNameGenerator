@@ -18,10 +18,14 @@ let spaceCheck = document.querySelector("#space");
 let shuffleCheck = document.querySelector("#shuffle");
 
 
-document.addEventListener("load",function()
-{
-  alert("working")
-  spaceCheck.checked = true;
+// document.addEventListener("load",function()
+// {
+//   // alert("working")
+//   spaceCheck.checked = true;
+// })
+
+window.addEventListener("load",()=>{
+  nameGen(faker.name.firstName(), space, shuffle);
 })
 
 generateButton.addEventListener("click", function (event) {
